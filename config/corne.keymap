@@ -132,7 +132,7 @@
             display-name = "Colemak";
             bindings = <
   &kp TAB    &td_corne_q        &kp W                &kp F            &kp P             &kp B                  &kp J                &kp L         &kp U           &kp Y          &kp SEMI        &kp BSPC
-  &kp LCTRL  &hm LCTRL A        &hm LGUI R           &hm LALT S       &hm LSHIFT T      &kp G                  &kp M                &kp N         &kp E           &kp  I         &kp O           &kp SQT
+  &kp LCTRL  &hm LCTRL A        &hm LGUI R           &hm LALT S       &hm LSHIFT T      &kp G                  &kp M                &hm RSHIFT N  &hm RALT E      &hm RGUI I    &hm RCTRL O      &kp SQT
   &kp LSHFT  &td_z              &lt CORNE_DEF_MOD X  &lt CORNE_NAV C  &kp D             &kp V                  &kp K                &hm RSHIFT H  &hm RALT COMMA  &hm  RGUI DOT  &hm RCTRL FSLH  &kp ESC
                                                      &kp BSPC &lt CORNE_KEYPAD ESC          &td_corne_cw_nav       &lt CORNE_NAV ENTER  &kp SPACE  &lt CORNE_KEYPAD ESC
 >;
