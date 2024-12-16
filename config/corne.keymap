@@ -8,14 +8,14 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define CORNE_QWERTY       0
-#define CORNE_COLEMAK_DH   1
+#define CORNE_COLEMAK_DH   0
+#define CORNE_QWERTY       1
 #define CORNE_KEYPAD       2
 #define CORNE_FUNCTION     3
 #define CORNE_NAV          4
 #define CORNE_DEF_MOD      5
 
-#define DEFAULT            CORNE_QWERTY
+#define QWERTY            CORNE_QWERTY
 
 #define TD_HM_TAP_TERM     175
 #define TD_Z_TAP_TERM      250
@@ -89,7 +89,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <TD_HM_TAP_TERM>;
-            bindings = <&none>, <&to DEFAULT>;
+            bindings = <&none>, <&to QWERTY>;
         };
 
         td_corne_q: tap_dance_to_corne_qwerty {
@@ -118,16 +118,6 @@
         keymap {
                 compatible = "zmk,keymap";
 
-                default_layer {
-                display-name = "Qwerty";
-            bindings = <
-  &kp TAB    &td_corne_c         &kp W                &kp E                &kp R             &kp T                  &kp Y                &kp U      &kp I                &kp  O                 &kp P                  &kp BSPC
-  &kp LCTRL  &hm LCTRL A         &hm LGUI S           &hm LALT D           &hm LSHIFT F      &kp G                  &kp H                &td_hm_j   &td_hm_k             &td_hm_l               &hm RCTRL SEMI         &kp SQT
-  &kp LSHFT  &td_z               &lt CORNE_DEF_MOD X  &lt CORNE_NAV C      &td_v             &kp B                  &kp N                &kp M      &lt CORNE_NAV COMMA  &lt CORNE_DEF_MOD DOT  &lt CORNE_KEYPAD FSLH  &kp ESC
-                                                      &kp BSPC         &lt CORNE_KEYPAD ESC           &td_corne_cw_nav       &lt CORNE_NAV ENTER  &kp SPACE  &lt CORNE_KEYPAD ESC
- >;
-        };
-
         corne_colemak_dh {
             display-name = "Colemak";
             bindings = <
@@ -136,6 +126,16 @@
   &kp LSHFT  &td_z              &lt CORNE_DEF_MOD X  &lt CORNE_NAV C  &kp D             &kp V                  &kp K                &hm RSHIFT H  &hm RALT COMMA  &hm  RGUI DOT  &hm RCTRL FSLH  &kp ESC
                                                      &kp BSPC &lt CORNE_KEYPAD ESC          &td_corne_cw_nav       &lt CORNE_NAV ENTER  &kp SPACE  &lt CORNE_KEYPAD ESC
 >;
+        };
+
+        qwerty_layer {
+                display-name = "Qwerty";
+            bindings = <
+  &kp TAB    &td_corne_c         &kp W                &kp E                &kp R             &kp T                  &kp Y                &kp U      &kp I                &kp  O                 &kp P                  &kp BSPC
+  &kp LCTRL  &hm LCTRL A         &hm LGUI S           &hm LALT D           &hm LSHIFT F      &kp G                  &kp H                &td_hm_j   &td_hm_k             &td_hm_l               &hm RCTRL SEMI         &kp SQT
+  &kp LSHFT  &td_z               &lt CORNE_DEF_MOD X  &lt CORNE_NAV C      &td_v             &kp B                  &kp N                &kp M      &lt CORNE_NAV COMMA  &lt CORNE_DEF_MOD DOT  &lt CORNE_KEYPAD FSLH  &kp ESC
+                                                      &kp BSPC         &lt CORNE_KEYPAD ESC           &td_corne_cw_nav       &lt CORNE_NAV ENTER  &kp SPACE  &lt CORNE_KEYPAD ESC
+ >;
         };
 
         corne_layer_keypad {
