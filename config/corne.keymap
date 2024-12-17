@@ -121,20 +121,20 @@
         corne_colemak_dh {
             display-name = "Colemak";
             bindings = <
-  &kp TAB    &td_corne_q        &kp W                &kp F            &kp P             &kp B                  &kp J                &kp L         &kp U           &kp Y          &kp SEMI        &kp BSPC
-  &kp LCTRL  &hm LCTRL A        &hm LGUI R           &hm LALT S       &hm LSHIFT T      &kp G                  &kp M                &hm RSHIFT N  &hm RALT E      &hm RGUI I    &hm RCTRL O      &kp SQT
-  &kp LSHFT  &td_z              &lt CORNE_DEF_MOD X  &lt CORNE_NAV C  &kp D             &kp V                  &kp K                &hm RSHIFT H  &hm RALT COMMA  &hm  RGUI DOT  &hm RCTRL FSLH  &kp ESC
-                                                     &kp BSPC &lt CORNE_KEYPAD ESC          &td_corne_cw_nav       &lt CORNE_NAV ENTER  &kp SPACE  &lt CORNE_KEYPAD ESC
+  &kp TAB    &td_corne_q        &kp W                &kp F                 &kp P                 &kp B                  &kp J                &kp L         &kp U           &kp Y          &kp SEMI        &kp BSPC
+  &kp LCTRL  &hm LCTRL A        &hm LGUI R           &hm LALT S            &hm LSHIFT T          &kp G                  &kp M                &hm RSHIFT N  &hm RALT E      &hm RGUI I    &hm RCTRL O      &kp SQT
+  &kp LSHFT  &td_z              &lt CORNE_DEF_MOD X  &lt CORNE_FUNCTION C  &kp D                 &kp V                  &kp K                &hm RSHIFT H  &hm RALT COMMA  &hm  RGUI DOT  &hm RCTRL FSLH  &kp ESC
+                                                     &kp BSPC              &lt CORNE_KEYPAD ESC  &td_corne_cw_nav       &lt CORNE_NAV ENTER  &kp SPACE  &lt CORNE_KEYPAD ESC
 >;
         };
 
         qwerty_layer {
                 display-name = "Qwerty";
             bindings = <
-  &kp TAB    &td_corne_c         &kp W                &kp E                &kp R             &kp T                  &kp Y                &kp U      &kp I                &kp  O                 &kp P                  &kp BSPC
-  &kp LCTRL  &hm LCTRL A         &hm LGUI S           &hm LALT D           &hm LSHIFT F      &kp G                  &kp H                &td_hm_j   &td_hm_k             &td_hm_l               &hm RCTRL SEMI         &kp SQT
-  &kp LSHFT  &td_z               &lt CORNE_DEF_MOD X  &lt CORNE_NAV C      &td_v             &kp B                  &kp N                &kp M      &lt CORNE_NAV COMMA  &lt CORNE_DEF_MOD DOT  &lt CORNE_KEYPAD FSLH  &kp ESC
-                                                      &kp BSPC         &lt CORNE_KEYPAD ESC           &td_corne_cw_nav       &lt CORNE_NAV ENTER  &kp SPACE  &lt CORNE_KEYPAD ESC
+  &kp TAB    &td_corne_c         &kp W                &kp E                 &kp R                 &kp T                  &kp Y                &kp U      &kp I                &kp  O                 &kp P                  &kp BSPC
+  &kp LCTRL  &hm LCTRL A         &hm LGUI S           &hm LALT D            &hm LSHIFT F          &kp G                  &kp H                &td_hm_j   &td_hm_k             &td_hm_l               &hm RCTRL SEMI         &kp SQT
+  &kp LSHFT  &td_z               &lt CORNE_DEF_MOD X  &lt CORNE_FUNCTION C  &td_v                 &kp B                  &kp N                &kp M      &lt CORNE_NAV COMMA  &lt CORNE_DEF_MOD DOT  &lt CORNE_KEYPAD FSLH  &kp ESC
+                                                      &kp BSPC              &lt CORNE_KEYPAD ESC  &td_corne_cw_nav       &lt CORNE_NAV ENTER  &kp SPACE  &lt CORNE_KEYPAD ESC
  >;
         };
 
