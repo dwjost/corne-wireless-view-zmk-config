@@ -176,10 +176,10 @@ corne_layer_nav {
 //               | GUI |     | SPC |     | ENT | ESC | TAB |
                         display-name = "Mod";
                         bindings = <
-  &kp TAB    &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT        &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR &kp BSPC
-  &kp ESC    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &kp LEFT  &kp DOWN  &kp UP          &kp RIGHT &trans   &kp SQT
-  &kp LSHFT  &bt BT_CLR   &trans       &trans       &trans       &trans           &trans    &trans    &trans          &trans    &trans   &kp ESC
-                                       &kp LGUI     &trans       &kp SPACE        &kp RET   &kp ESC   &kp TAB
+  &kp TAB    &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRINTSCREEN   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR &kp BSPC
+  &kp ESC    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &kp LEFT  &kp DOWN  &kp UP          &kp RIGHT &trans   &kp SQT
+  &kp LSHFT  &bt BT_CLR   &trans       &trans       &trans       &trans            &trans    &trans    &trans          &trans    &trans   &kp ESC
+                                       &kp LGUI     &trans       &kp SPACE         &kp RET   &kp ESC   &kp TAB
                         >;
                 };
 
