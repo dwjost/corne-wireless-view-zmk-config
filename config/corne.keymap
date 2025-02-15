@@ -182,6 +182,5 @@ corne_layer_nav {
                                        &kp LGUI     &trans       &kp SPACE         &kp RET   &kp ESC   &kp TAB
                         >;
                 };
-
         };
 };
